@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="conteiner">
+  <body class="container">
     <header class="page-header">
       <div>
         <a href="index.html" class="page-header__logo"><img class="page-header__logo-image" src="img/mishka-logo.svg" width="86" height="35" alt="логотип mishka"></a>
@@ -28,23 +28,23 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__headline">Вязание на заказ</h1>
-      <p class="page-main__еуче">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div class="page-main__radio">
         <fieldset class="page-main__list">
           <legend class="page-main__name">ТИП</legend>
-          <input class="page-main__radio--accessory" type="radio" value="accessory" name="radio-type" id="accessory"><label for="accessory">Аксессуар для интерьера</label>
-          <input class="page-main__radio--toy" type="radio" value="toy" name="radio-type" id="toy" checked><label for="toy">Детская игрушка</label>
+          <input class="page-main__accessory" type="radio" value="accessory" name="radio-type" id="accessory"><label for="accessory">Аксессуар для интерьера</label>
+          <input class="page-main__toy" type="radio" value="toy" name="radio-type" id="toy" checked><label for="toy">Детская игрушка</label>
         </fieldset>
       </div>
       <div class="page-main__checkbox">
         <fieldset class="page-main__list">
           <legend class="page-main__name">ЦВЕТ</legend>
-          <input class="page-main__checkbox--white" type="checkbox" name="checkbox-fillers" id="color" checked><label for="color">Белый</label>
-          <input class="page-main__checkbox--gray" type="checkbox" name="checkbox-fillers" id="color" checked><label for="color">Серый</label>
-          <input class="page-main__checkbox--tiffany" type="checkbox" name="checkbox-fillers" id="color"><label for="color">«Тиффани»</label>
-          <input class="page-main__checkbox--black" type="checkbox" name="checkbox-fillers" id="color"><label for="color">Черный</label>
-          <input class="page-main__checkbox--pink" type="checkbox" name="checkbox-fillers" id="color"><label for="color">Розовый</label>
-          <input class="page-main__checkbox--orange" type="checkbox" name="checkbox-fillers" id="color"><label for="color">Оранжевый</label>
+          <input class="page-main__white" type="checkbox" name="white-fillers" id="white" checked><label for="white">Белый</label>
+          <input class="page-main__gray" type="checkbox" name="gray-fillers" id="gray" checked><label for="gray">Серый</label>
+          <input class="page-main__tiffany" type="checkbox" name="tiffany-fillers" id="tiffany"><label for="tiffany">«Тиффани»</label>
+          <input class="page-main__black" type="checkbox" name="black-fillers" id="black"><label for="black">Черный</label>
+          <input class="page-main__pink" type="checkbox" name="pink-fillers" id="pink"><label for="pink">Розовый</label>
+          <input class="page-main__orange" type="checkbox" name="orange-fillers" id="orange"><label for="orange">Оранжевый</label>
         </fieldset>
       </div>
       <div>
@@ -58,13 +58,13 @@
       <div>
         <fieldset class="page-main__list">
           <legend class="page-main__name">ТЕЛ</legend>
-          <input class="page-main__phone" type="text" name="telephon" value="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="page-main__phone" type="tel" name="telephon" value="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
       </div>
       <div>
         <fieldset class="page-main__list">
           <legend class="page-main__name">E-MAIL</legend>
-          <input class="page-main__mail" type="text" name="mail" value="Ваш Email*">
+          <input class="page-main__mail" type="email" name="mail" value="Ваш Email*">
         </fieldset>
       </div>
       <fieldset class="page-main__list">
@@ -74,7 +74,7 @@
       <small>
         <sup>*</sup> Поля обязательны для заполнения
       </small>
-      <input class="page-main__button mauin-button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+      <input class="page-main__button main-button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
     </main>
     <footer>
       <ul class="social-list">
