@@ -75,14 +75,14 @@
           стильными, а также набирают больше лайков!</p>
         <p class="reviews__signature">Анастасия Красильникова <span class="reviews___contact">@misssssiskras</span></p>
         <div class="slider-controls">
-          <button class="slider-controls_button" type="button"><span class="visually-hidden">лево</span></button>
-          <button class="slider-controls_button" type="button"><span class="visually-hidden">право</span></button>
+          <button class="slider-controls__button" type="button"><span class="visually-hidden">лево</span></button>
+          <button class="slider-controls__button" type="button"><span class="visually-hidden">право</span></button>
         </div>
         <a href="#" class="reviews__button">Написать</a>
       </section>
       <section class="main-contact">
+        <h3 class="main-contact__adress-title">Контакты</h3>
         <address class="main-contact__adress">
-          <h3 class="main-contact__adress-title">Контакты</h3>
           <table class="main-contact__adress-list">
             <tr>
               <td class="main-contact__adress-list__value">e-mail:</td>
@@ -118,11 +118,11 @@
     <div class="popup">
       <h4 class="popup__title">Добавить в корзину</h4>
       <p class="popup__text">Выберите размер:</p>
-      <ul class="popup__list">
-        <li class="popup__size">S</li>
-        <li class="popup__size">M</li>
-        <li class="popup__size">L</li>
-      </ul>
+      <form class="popup__form" action="https://echo.htmlacademy.ru">
+        <button type="submit" class="popup__form--size">S</button>
+        <button type="submit" class="popup__form--size">M</button>
+        <button type="submit" class="popup__form--size">L</button>
+      </form>
       <button type="button" class="popup__button main-button">Добавить</button>
     </div>
   </body>
