@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="conteiner">
+  <body class="container">
     <header class="page-header">
       <div>
         <a href="index.html" class="page-header__logo"><img class="page-header__logo-image" src="img/mishka-logo.svg" width="86" height="35" alt="логотип mishka"></a>
@@ -27,37 +27,46 @@
       </nav>
     </header>
     <main class="page-maincatalog">
-      <h1>Каталог товаров</h1>
-      <section class="page-maincatalog__wrapper">
-        <a href="#"><img class="page-maincatalog__image" src="http://placehold.it/260x195"></a>
-        <ul class="page-maincatalog__list">
-          <li class="page-maincatalog__item"><a class="page-maincatalog__bunny" href="#">Зайчик-попрыгайчик</a></li>
-          <li class="page-maincatalog__item">Рост 30 см, вес 200 г</li>
-          <li class="page-maincatalog__item bascket-button">1 200 руб.</li>
-        </ul>
+      <h1 class="page-maincatalog__headline">Каталог товаров</h1>
+      <section class="main-catalog">
+        <div class="main-catalog__wrapper">
+          <a class="main-catalog__image" href="#"><img class="main-catalog__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик"></a>
+          <a class="main-catalog__wrapper-title" href="#">
+            <h2 class="main-catalog__title">Зайчик-попрыгайчик</h2>
+          </a>
+          <span class="main-catalog__characteristic">Рост 30 см, вес 200 г</span>
+          <span class="main-catalog__price">1 200 руб.</span>
+          <a class="main-catalog__bascket"><span class="visually-hidden">Корзина</span></a>
+        </div>
       </section>
-      <section class="page-maincatalog__wrapper">
-        <a href="#"><img class="page-maincatalog__image" src="http://placehold.it/260x195"></a>
-        <ul class="page-maincatalog__list">
-          <li class="page-maincatalog__item"><a class="page-maincatalog__bascket" href="#">Корзинка для белья</a></li>
-          <li class="page-maincatalog__item">Диаметр 15 см, высота 10 см</li>
-          <li class="page-maincatalog__item bascket-button">690 руб.</li>
-        </ul>
+      <section class="main-catalog">
+        <div class="main-catalog__wrapper">
+          <a class="main-catalog__image" href="#"><img class="main-catalog__image" src="http://placehold.it/260x195" alt="Корзинка"></a>
+          <a class="main-catalog__wrapper-title" href="#">
+            <h2 class="main-catalog__title">Корзинка для белья</h2>
+          </a>
+          <span class="main-catalog__characteristic">Диаметр 15 см, высота 10 см</span>
+          <span class="main-catalog__price">690 руб.</span>
+          <a class="main-catalog__bascket"><span class="visually-hidden">Корзина</span></a>
+        </div>
       </section>
-      <section class="page-maincatalog__wrapper">
-        <a href="#"><img class="page-maincatalog__image" src="http://placehold.it/260x195"></a>
-        <ul class="page-maincatalog__list">
-          <li class="page-maincatalog__item"><a class="page-maincatalog__big-bascket" href="#">Большая корзинка для игрушек</a></li>
-          <li class="page-maincatalog__item">Диаметр 30 см, высота 30 смг</li>
-          <li class="page-maincatalog__item bascket-button">1 500 руб.</li>
-        </ul>
+      <section class="main-catalog">
+        <div class="main-catalog__wrapper">
+          <a class="main-catalog__image" href="#"><img class="main-catalog__image" src="http://placehold.it/260x195" alt="Большая-корзинка"></a>
+          <a class="main-catalog__wrapper-title" href="#">
+            <h2 class="main-catalog__title">Большая корзинка для игрушек</h2>
+          </a>
+          <span class="main-catalog__characteristic">Диаметр 30 см, высота 30 смг</span>
+          <span class="main-catalog__price">1 500 руб.</span>
+          <a class="main-catalog__bascket"><span class="visually-hidden">Корзина</span></a>
+        </div>
       </section>
     </main>
     <footer>
       <ul class="social-list">
-        <li><a class="social-list__item social-list__item--image" href="www.instagram.com"><span class="visually-hidden">инстаграмм</span></a></li>
-        <li><a class="social-list__item social-list__item--image" href="www.facebook.com"><span class="visually-hidden">фэисбук</span></a></li>
-        <li><a class="social-list__item social-list__item--image" href="www.twitter.com"><span class="visually-hidden">твитетр</span></a></li>
+        <li><a class="social-list__item social-list__item--instagram" href="www.instagram.com"><span class="visually-hidden">инстаграмм</span></a></li>
+        <li><a class="social-list__item social-list__item--facebook" href="www.facebook.com"><span class="visually-hidden">фэисбук</span></a></li>
+        <li><a class="social-list__item social-list__item--twitter" href="www.twitter.com"><span class="visually-hidden">твитетр</span></a></li>
       </ul>
       <div class="companion">
         <p class="companion__text">Разработано</p>
