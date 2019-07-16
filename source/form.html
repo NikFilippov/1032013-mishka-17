@@ -32,41 +32,41 @@
       <div class="page-main__radio">
         <fieldset class="page-main__list">
           <legend class="page-main__name">ТИП</legend>
-          <input class="page-main__accessory" type="radio" value="accessory" name="radio-type" id="accessory"><label for="accessory">Аксессуар для интерьера</label>
-          <input class="page-main__toy" type="radio" value="toy" name="radio-type" id="toy" checked><label for="toy">Детская игрушка</label>
+          <form class="page-main__form" action="https://echo.htmlacademy.ru">
+            <input class="page-main__accessory" type="radio" value="accessory" name="radio-type" id="accessory"><label for="accessory">Аксессуар для интерьера</label>
+            <input class="page-main__toy" type="radio" value="toy" name="radio-type" id="toy" checked><label for="toy">Детская игрушка</label>
+          </form>
         </fieldset>
       </div>
       <div class="page-main__checkbox">
         <fieldset class="page-main__list">
           <legend class="page-main__name">ЦВЕТ</legend>
-          <input class="page-main__white" type="checkbox" name="white-fillers" id="white" checked><label for="white">Белый</label>
-          <input class="page-main__gray" type="checkbox" name="gray-fillers" id="gray" checked><label for="gray">Серый</label>
-          <input class="page-main__tiffany" type="checkbox" name="tiffany-fillers" id="tiffany"><label for="tiffany">«Тиффани»</label>
-          <input class="page-main__black" type="checkbox" name="black-fillers" id="black"><label for="black">Черный</label>
-          <input class="page-main__pink" type="checkbox" name="pink-fillers" id="pink"><label for="pink">Розовый</label>
-          <input class="page-main__orange" type="checkbox" name="orange-fillers" id="orange"><label for="orange">Оранжевый</label>
+          <form class="page-main__form" action="https://echo.htmlacademy.ru">
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="white-fillers" id="white" checked><label class="page-main__label page-main__label--checkbox" for="white">Белый</label>
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="gray-fillers" id="gray" checked><label class="page-main__label page-main__label--checkbox" for="gray">Серый</label>
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="tiffany-fillers" id="tiffany"><label class="page-main__label page-main__label--checkbox" for="tiffany">«Тиффани»</label>
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="black-fillers" id="black"><label class="page-main__label page-main__label--checkbox" for="black">Черный</label>
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="pink-fillers" id="pink"><label class="page-main__label page-main__label--checkbox" for="pink">Розовый</label>
+            <input class="page-main__control page-main__control--checkbox" type="checkbox" name="orange-fillers" id="orange"><label class="page-main__label page-main__label--checkbox" for="orange">Оранжевый</label>
+          </form>
         </fieldset>
       </div>
-      <div>
-        <fieldset class="page-main__list">
-          <legend class="page-main__name">ФИО</legend>
-          <label class="page-main__fio">Имя:</label><input type="text" name="name" value="Введите ваше имя*">
-          <label class="page-main__fio">Фамилия:</label><input type="text" name="surname" value="Укажите фамилию*">
-          <label class="page-main__fio">Отчество:</label><input type="text" name="patronymic" value="Отчество, если желаете">
-        </fieldset>
-      </div>
-      <div>
-        <fieldset class="page-main__list">
-          <legend class="page-main__name">ТЕЛ</legend>
-          <input class="page-main__phone" type="tel" name="telephon" value="+7 ХХХ ХХХ ХХ ХХ*">
-        </fieldset>
-      </div>
-      <div>
-        <fieldset class="page-main__list">
-          <legend class="page-main__name">E-MAIL</legend>
-          <input class="page-main__mail" type="email" name="mail" value="Ваш Email*">
-        </fieldset>
-      </div>
+      <fieldset class="page-main__list">
+        <legend class="page-main__name">ФИО</legend>
+        <form class="page-main__form" action="https://echo.htmlacademy.ru">
+          <label class="page-main__fio">Имя:</label><input class="page-main__control page-main__control--text" type="text" name="name" value="Введите ваше имя*">
+          <label class="page-main__fio">Фамилия:</label><input class="page-main__control page-main__control--text" type="text" name="surname" value="Укажите фамилию*">
+          <label class="page-main__fio">Отчество:</label><input class="page-main__control page-main__control--text" type="text" name="patronymic" value="Отчество, если желаете">
+        </form>
+      </fieldset>
+      <fieldset class="page-main__list">
+        <legend class="page-main__name">ТЕЛ</legend>
+        <form class="page-main__form" action="https://echo.htmlacademy.ru"><input class="page-main__phone" type="tel" name="telephon" value="+7 ХХХ ХХХ ХХ ХХ*"></form>
+      </fieldset>
+      <fieldset class="page-main__list">
+        <legend class="page-main__name">E-MAIL</legend>
+        <form class="page-main__form" action="https://echo.htmlacademy.ru"><input class="page-main__mail" type="email" name="mail" value="Ваш Email*"></form>
+      </fieldset>
       <fieldset class="page-main__list">
         <legend class="page-main__name">ДОП</legend>
         <textarea class="page-main__wishes" name="comment" id="comment-field" rows="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -74,7 +74,7 @@
       <small>
         <sup>*</sup> Поля обязательны для заполнения
       </small>
-      <input class="page-main__button main-button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+      <form class="page-main__form" action="https://echo.htmlacademy.ru"><input class="page-main__button main-button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ"></form>
     </main>
     <footer>
       <ul class="social-list">
