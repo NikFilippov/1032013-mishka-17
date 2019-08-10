@@ -51,3 +51,65 @@
   margin-top: 31px;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .reviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    height: 560px;
+  }
+
+  .reviews__headline {
+    order: 1;
+  }
+
+  .reviews__button {
+    order: 2;
+  }
+
+  .reviews__headline-text {
+    order: 3;
+    width: 668px;
+    height: 175px;
+  }
+
+  .reviews__signature {
+    order: 4;
+  }
+
+  .slider-controls {
+    order: 5;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .reviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 875px;
+    height: 560px;
+  }
+
+  .reviews__headline {
+    order: 1;
+  }
+
+  .reviews__button {
+    order: 2;
+  }
+
+  .reviews__headline-text {
+    order: 3;
+    width: 668px;
+    height: 175px;
+  }
+
+  .reviews__signature {
+    order: 4;
+  }
+
+  .slider-controls {
+    order: 5;
+  }
+}

@@ -91,3 +91,35 @@
   margin-top: 28px;
   margin-left: 28px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-catalog__wrapper {
+    display: flex;
+  }
+
+  .main-catalog__image {
+    display: inline-block;
+  }
+
+  .main-catalog__wrapper-characteristic {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .main-catalog {
+    display: inline-block;
+  }
+
+  .main-catalog__wrapper {
+    display: block;
+  }
+
+  .main-catalog__image {
+    display: block;
+  }
+
+  .main-catalog__wrapper-characteristic {
+    display: block;
+  }
+}

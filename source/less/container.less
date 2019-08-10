@@ -1,11 +1,14 @@
 .container {
+  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @dextop-width) {
+    width: @dextop-width;
+  }
 }

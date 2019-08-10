@@ -26,3 +26,28 @@
   fill: #46c1ae;
   opacity: 3;
 }
+
+.social__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+
+}
+
+@media (min-width: @dextop-width) {
+  .social {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+
+  .social__logo {
+    display: inline-block;
+    width: 102px;
+    height: 35px;
+  }
+}
