@@ -5,15 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: mishka</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggel main-button" type="button"><span class="visually-hidden">открыть меню</span></button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper container">
           <ul class="main-nav__list site-list">
             <li class="main-nav__logo"><svg class="main-nav__logo-svg" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px"
                 viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve" fill="#231F20">
@@ -55,11 +54,11 @@
         </div>
       </nav>
     </header>
-    <main class="page-main container">
-      <div class="page-main__wrapper-title">
+    <main class="page-main">
+      <div class="page-main__wrapper-title container">
         <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
       </div>
-      <section class="page-main__wrapper">
+      <section class="page-main__wrapper container">
         <ul class="page-main__list main-list">
           <li><a class="main-list__item main-list__color-1" href=""><span class="main-list__item-text">Предметы интерьера</span><svg class="main-list__item-interior" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve" fill="#3bb09d">
@@ -80,7 +79,7 @@
               </svg></a></li>
         </ul>
       </section>
-      <section class="product-week">
+      <section class="product-week container">
         <div class="product-week__wrapper-title">
           <h2 class="product-week__name">Вязаные корзинки</h2>
           <p class="product-week__slogan">ТОВАР НЕДЕЛИ</p>
@@ -108,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us container container">
         <h3 class="about-us__title">Коротко о нас:</h3>
         <ul class="about-us__list">
           <li class="about-us__items about-us__items--ecology">Экологически чистые материалы</li>
@@ -119,7 +118,7 @@
           <li class="about-us__items about-us__items--present">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="reviews">
+      <section class="reviews container">
         <div class="reviews-wrapper">
           <h3 class="reviews__headline">Отзывы</h3>
           <p class="reviews__headline-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
@@ -132,7 +131,7 @@
           <a href="#" class="reviews__button">НАПИСАТЬ</a>
         </div>
       </section>
-      <section class="main-contact">
+      <section class="main-contact container">
         <div class="main-contact__wrapper">
           <h3 class="main-contact__adress-title">Контакты</h3>
           <address class="main-contact__adress">
@@ -147,18 +146,18 @@
               </tr>
             </table>
           </address>
-          <section class="main-contact__map">
-            <div class="main-contact__map-wrapper">
-              <img src="img/map-mobile@1x.jpg" alt="карта">
-            </div>
-          </section>
-          <section class="main-contact__message">
-            <a class="main-button main-contact__message-button" href="#">НАПИШИТЕ НАМ</a>
-          </section>
+      </section>
+      <section class="main-map main-map__position">
+        <div class="main-map__wrapper">
+          <img src="img/map-mobile@1x.jpg" alt="карта" width="320" height="459">
+        </div>
+      </section>
+      <section class="main-contact__message">
+        <a class="main-button main-contact__message-button" href="#">НАПИШИТЕ НАМ</a>
       </section>
       </div>
     </main>
-    <footer class="social container">
+    <footer class="social">
       <a href="index.html" class="social__logo"><svg class="page-header__logo-svg" fill="#231f20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px"
           height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
           <g>
@@ -178,7 +177,7 @@
               d="M24.108,6.7c0.521-0.05,1.045-0.226,1.477-0.524c0.085-0.072,0.171-0.144,0.256-0.216c0.52-0.335,0.972-0.827,0.728-1.361 c-0.504-1.105-0.423-2.231-0.416-3.414c0.006-0.958-0.963-1.246-1.781-1.174c-0.723,0.063-2.168,0.581-2.175,1.52 c-0.006,0.993-0.071,2.016,0.109,2.992c-0.047,0.113-0.074,0.239-0.104,0.355c-0.055,0.212,0.016,0.42,0.142,0.59 c0,0.045,0.002,0.089,0.002,0.134c0.005,0.112,0.01,0.224,0.015,0.335c0.073,0.232,0.216,0.409,0.429,0.53 C23.178,6.7,23.668,6.742,24.108,6.7z" />
           </g>
         </svg></a>
-      <ul class="social-list">
+      <ul class="social-list container">
         <li class="social-list__item"><a href="www.instagram.com"><span class="visually-hidden">инстаграмм</span><svg class="social-list__item-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve" fill="#231F20">
               <g id="instagram">
@@ -209,7 +208,7 @@
               </g>
             </svg></a></li>
       </ul>
-      <div class="companion">
+      <div class="companion container">
         <p class="companion__text">Разработано</p>
         <a class="companion__logo-academy" href="https://htmlacademy.ru/intensive/adaptive"><svg class="companion__logo-academy-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#63d1bb">
