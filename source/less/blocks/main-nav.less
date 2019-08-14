@@ -10,8 +10,14 @@
 .main-nav__logo-svg {
   width: 86px;
   height: 35px;
-  margin-top: 22px;
-  margin-left: 116px;
+  margin-top: 20px;
+  margin-left: 86px;
+}
+
+.main-nav__logo-tablet {
+  width: 116px;
+  height: 55px;
+  display: none;
 }
 
 .main-nav__logo {
@@ -32,8 +38,8 @@
   width: 27px;
   height: 3px;
   background-color: #323232;
-  bottom: 58px;
-  right: -280px;
+  bottom: -20px;
+  right: -281px;
 }
 
 .main-nav__toggel::before {
@@ -67,9 +73,15 @@
     display: none;
   }
 
+  .main-nav__logo-tablet {
+    width: 116px;
+    height: 55px;
+    display: block;
+  }
+
   .main-nav__wrapper {
     margin: 0;
-    width: 680px;
+    width: 768px;
   }
 
   .main-nav__list {
@@ -122,12 +134,22 @@
   .main-nav__item--sell-out {
     display: none;
   }
+
+  .main-nav__logo-svg {
+    display: none;
+  }
 }
 
 @media (min-width: @dextop-width) {
   .main-nav__toggel::after,
   .main-nav__toggel::before {
     display: none;
+  }
+
+  .main-nav__logo-tablet {
+    width: 116px;
+    height: 55px;
+    display: block;
   }
 
   .main-nav__wrapper {
@@ -187,5 +209,9 @@
     line-height: 24px;
     font-weight: normal;
     color: #444444;
+  }
+
+  .main-nav__logo-svg {
+    display: none;
   }
 }

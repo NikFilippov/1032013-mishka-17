@@ -4,7 +4,6 @@
   color: #000000;
   font-weight: bold;
   padding-top: 8px;
-  padding-left: 30px;
 }
 
 .product-week__slogan {
@@ -13,7 +12,6 @@
   color: #63d1bb;
   font-weight: bold;
   margin: 0;
-  padding-left: 28px;
   margin-top: -16px;
 }
 
@@ -23,7 +21,6 @@
   color: #444444;
   font-weight: normal;
   margin: 0;
-  padding-left: 29px;
   padding-top: 25px;
   width: 248px;
   margin-bottom: 21px;
@@ -34,7 +31,6 @@
   line-height: 24px;
   color: #444444;
   font-weight: normal;
-  padding-left: 30px;
   padding-bottom: 14px;
 }
 
@@ -64,28 +60,36 @@
   line-height: 52px;
   color: #444444;
   font-weight: bold;
-  width: 256px;
-  height: 52px;
+  width: 259px;
+  height: 54px;
   border: solid 2px #444444;
   background-color: #ffffff;
   text-align: center;
 }
 
+.product-week__wrapper {
+  margin-top: 21px;
+}
 @media (min-width: @tablet-width) {
   .product-week__wrapper-title {
     display: flex;
+    justify-content: space-between;
   }
 
   .product-week__name {
-    display: inline-block;
-    width: 430px;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: bold;
   }
 
   .product-week__slogan {
-    display: inline-block;
-    width: 110px;
     margin: 0;
     padding: 0;
+    text-align: center;
+    width: 75px;
+    margin-right: 25px;
+    margin-top: 53px;
   }
 
   .product-week__wrapper-description {
