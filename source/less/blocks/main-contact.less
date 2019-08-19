@@ -33,7 +33,6 @@
   border: solid 2px #444444;
   background-color: #ffffff;
   margin-top: 33px;
-  margin-left: 31px;
   text-align: center;
 }
 
@@ -66,9 +65,23 @@
   padding-left: 23px;
 }
 
+.main-contact__wrapper {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.main-contact__message {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .main-contact__wrapper {
-    width: 668px;
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   .main-contact__adress-item {
@@ -76,13 +89,21 @@
     display: table-cell;
     width: 334px;
   }
+
+  .main-contact__message {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: @dextop-width) {
   .main-contact__wrapper {
     display: flex;
-    width: 460px;
+    width: 1150px;
     flex-wrap: wrap;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   .main-contact__adress-item {
@@ -94,5 +115,8 @@
 
   .main-contact__message {
     order: 3;
+    width: 1150px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 }
