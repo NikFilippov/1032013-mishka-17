@@ -1,6 +1,7 @@
 .main-map__wrapper {
   position: relative;
-  margin-top: -40px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-map__wrapper::after {
@@ -14,14 +15,15 @@
   left: 140px;
 }
 
-@media (min-width: @dextop-width) {
-  .main-map__position {
-    position: relative;
-  }
-
+@media (min-width: @tablet-width) {
   .main-map__wrapper {
-    position: absolute;
-    bottom: -68px;
-    left: 691px;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .main-map__wrapper {
+    width: 525px;
   }
 }
