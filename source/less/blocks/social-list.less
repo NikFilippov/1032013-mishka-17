@@ -1,13 +1,12 @@
 .social-list {
   display: flex;
   list-style: none;
-  width: 272px;
   height: 80px;
   background-color: #f1f1f1;
   margin: 0;
-  margin-top: 39px;
+  margin-top: 40px;
   padding: 0;
-  padding-left: 49px;
+  padding-left: 20px;
   border-bottom: solid 1px #e5e5e5;
 }
 
@@ -25,4 +24,18 @@
 .social-list__item-svg:active {
   fill: #46c1ae;
   opacity: 3;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    width: 415px;
+    display: block;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .social-list {
+    width: 415px;
+    display: block;
+  }
 }

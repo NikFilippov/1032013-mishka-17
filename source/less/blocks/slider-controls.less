@@ -1,10 +1,12 @@
 
 .slider-controls__button-l {
+  display: inline-block;
   position: relative;
   width: 130px;
   height: 52px;
   background-color: #ffffff;
   border: solid 1px #ececec;
+  vertical-align: top;
 }
 
 .slider-controls__button-l::after {
@@ -19,11 +21,13 @@
 }
 
 .slider-controls__button-r {
+  display: inline-block;
   position: relative;
   width: 130px;
   height: 52px;
   background-color: #ffffff;
   border: solid 1px #ececec;
+  vertical-align: top;
 }
 
 .slider-controls__button-r::after {
@@ -34,10 +38,16 @@
   width: 50px;
   height: 26px;
   top: 12px;
-  right: 46px;
+  right: 42px;
 }
 
 .slider-controls {
-  margin-top: 31px;
-  margin-left: 31px;
+  display: flex;
+  margin-top: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-controls {
+    margin: 0;
+  }
 }

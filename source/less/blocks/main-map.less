@@ -1,0 +1,29 @@
+.main-map__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-map__wrapper::after {
+  content: "";
+  width: 66px;
+  height: 101px;
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  top: 147px;
+  left: 140px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-map__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .main-map__wrapper {
+    width: 525px;
+  }
+}

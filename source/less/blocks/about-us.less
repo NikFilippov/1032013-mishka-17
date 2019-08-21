@@ -4,22 +4,24 @@
   color: #000000;
   font-weight: bold;
   margin-top: 68px;
-  margin-left: 28px;
 }
 
 .about-us__list {
   list-style: none;
-  padding-left: 29px;
-  position: relative;
+  padding: 0;
 }
 
 .about-us__items {
+  position: relative;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
   font-weight: bold;
-  margin-top: 84px;
-  width: 232px;
+  padding-top: 61px;
+  width: 291px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  margin-top: 22px;
 }
 
 .about-us__items--ecology::before {
@@ -28,9 +30,8 @@
   height: 38px;
   position: absolute;
   background-image: url("../img/icon-feature-flower.svg");
-  background-repeat: no-repeat;
-  top: -53px;
-  left: 38px;
+  top: 7px;
+  left: 8px;
 }
 
 .about-us__items--style::before {
@@ -39,8 +40,8 @@
   height: 27px;
   position: absolute;
   background-image: url("../img/icon-feature-money.svg");
-  background-repeat: no-repeat;
-  top: 72px;
+  top: 11px;
+  left: -1px;
 }
 
 .about-us__items--likes::before {
@@ -49,9 +50,8 @@
   height: 28px;
   position: absolute;
   background-image: url("../img/icon-feature-heart.svg");
-  background-repeat: no-repeat;
-  top: 199px;
-  left: 38px;
+  top: 13px;
+  left: 7px;
 }
 
 .about-us__items--withlove::before {
@@ -60,9 +60,8 @@
   height: 35px;
   position: absolute;
   background-image: url("../img/icon-feature-ball.svg");
-  background-repeat: no-repeat;
-  top: 320px;
-  left: 34px;
+  top: 12px;
+  left: 3px;
 }
 
 .about-us__items--domestic::before {
@@ -71,9 +70,8 @@
   height: 24px;
   position: absolute;
   background-image: url("../img/icon-feature-rocket.svg");
-  background-repeat: no-repeat;
-  top: 444px;
-  left: 24px;
+  top: 11px;
+  left: -6px;
 }
 
 .about-us__items--present::before {
@@ -82,7 +80,87 @@
   height: 33px;
   position: absolute;
   background-image: url("../img/icon-feature-gift.svg");
-  background-repeat: no-repeat;
-  top: 564px;
-  left: 33px;
+  top: 10px;
+  left: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__items--ecology {
+    order: 1;
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--style {
+    order: 3;
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--likes {
+    order: 5;
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--withlove {
+    order: 2;
+    width: 255px;
+    margin-right: 79px;
+  }
+
+  .about-us__items--domestic {
+    order: 4;
+    width: 255px;
+    margin-right: 79px;
+  }
+
+  .about-us__items--present {
+    order: 6;
+    width: 255px;
+    margin-right: 79px;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px 0 200px;
+  }
+
+  .about-us__items--ecology {
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--style {
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--likes {
+    width: 210px;
+    margin-right: auto;
+  }
+
+  .about-us__items--withlove {
+    width: 255px;
+    margin-right: 79px;
+  }
+
+  .about-us__items--domestic {
+    width: 255px;
+    margin-right: 79px;
+  }
+
+  .about-us__items--present {
+    width: 255px;
+    margin-right: 79px;
+  }
 }

@@ -6,22 +6,33 @@
 
 .site-list__item {
   position: relative;
-  display: block;
-  height: 78px;
-  border-bottom: solid 1px #ececec;
-  border-top: solid 1px #ececec;
-  padding-left: 76px;
-  line-height: 73px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .site-list__text {
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+  padding-left: 75px;
 }
 
 .site-list__svg {
   position: absolute;
-  top: 28px;
-  left: 31px;
+  top: 5px;
+  left: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    padding-left: 0;
+    line-height: 0;
+  }
+}
+
+@media (min-width: @dextop-width) {
+  .site-list__item {
+    padding-left: 0;
+    line-height: 0;
+  }
 }
