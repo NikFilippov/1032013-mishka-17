@@ -6,7 +6,7 @@
   display: block;
   border-bottom: solid 1px #ececec;
   border-top: solid 1px #ececec;
-  line-height: 76px;
+  line-height: 77px;
 }
 
 
@@ -22,8 +22,12 @@
 .main-nav__logo-svg {
   width: 86px;
   height: 35px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-left: 115px;
+}
+
+.main-nav__logo-dextop {
+  display: none;
 }
 
 .main-nav__logo-tablet {
@@ -89,6 +93,10 @@
     display: none;
   }
 
+  .main-nav__logo-dextop {
+    display: none;
+  }
+
   .main-nav__logo-tablet {
     width: 116px;
     height: 55px;
@@ -108,11 +116,19 @@
   .main-nav__item {
     display: inline-block;
     vertical-align: top;
+    border: none;
+    line-height: 20px;
   }
 
   .main-nav__item--search {
     order: 1;
     width: 84px;
+    height: 88px;
+    border-right: solid 1px #ececec;
+    border-left: solid 1px #ececec;
+    background-color: white;
+    margin-top: -18px;
+    margin-left: 47px;
   }
 
   .main-nav__item--bascket {
@@ -123,11 +139,14 @@
   .main-nav__item--catalog {
     order: 3;
     width: 167px;
+    margin-top: 9px;
+    margin-left: 3px;
   }
 
   .main-nav__item--knitting {
     order: 3;
     width: 167px;
+    margin-top: 10px;
   }
 
   .main-nav__logo {
@@ -141,6 +160,8 @@
     line-height: 24px;
     font-weight: normal;
     color: #444444;
+    margin-top: 10px;
+    margin-left: 104px;
   }
 
   .main-nav__item--income {
@@ -163,9 +184,13 @@
   }
 
   .main-nav__logo-tablet {
-    width: 116px;
-    height: 55px;
+    display: none;
+  }
+
+  .main-nav__logo-dextop {
     display: block;
+    margin-top: -13px;
+    margin-left: 75px;
   }
 
   .main-nav__wrapper {
@@ -186,37 +211,44 @@
 
   .main-nav__item--search {
     order: 4;
-    width: 84px;
+    margin-left: 50px;
+    margin-top: -22px;
   }
 
   .main-nav__item--bascket {
     order: 5;
-    width: 315px;
+    width: 266px;
   }
 
   .main-nav__item--catalog {
     order: 1;
-    width: 167px;
+    width: 186px;
+    margin-left: 0;
+    border-right: solid 1px #ececec;
+    margin-top: -22px;
+    height: 88px;
+    padding-top: 31px;
   }
 
   .main-nav__item--knitting {
     order: 2;
-    width: 167px;
+    width: 189px;
+    padding-left: 33px;
   }
 
   .main-nav__logo {
     order: 3;
-    width: 275px;
   }
 
   .main-nav__item--income {
     order: 6;
-    width: 275px;
+    margin-top: 5px;
   }
 
   .main-nav__item--sell-out {
     order: 6;
-    width: 275px;
+    margin-left: 61px;
+    margin-top: 5px;
   }
 
   .main-nav__item--delivery {
@@ -226,6 +258,8 @@
     line-height: 24px;
     font-weight: normal;
     color: #444444;
+    margin-left: 505px;
+    margin-top: 5px;
   }
 
   .main-nav__logo-svg {

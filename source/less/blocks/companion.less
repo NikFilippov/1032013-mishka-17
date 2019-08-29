@@ -33,14 +33,39 @@
 
 @media (min-width: @tablet-width) {
   .companion {
+    position:relative;
     width: 350px;
     display: block;
+    margin-right: -6px;
+    padding-top: 24px;
+  }
+
+  .companion__logo-academy {
+    position: absolute;
+    top: 34px;
+    left: 166px;
+  }
+
+  .companion__text {
+    margin-top: 38px;
   }
 }
 
 @media (min-width: @dextop-width) {
   .companion {
-    width: 350px;
+    position: relative;
+    width: 231px;
     display: block;
+    margin-left: 117px;
+  }
+
+  .companion__logo-academy {
+    position: absolute;
+    top: 49px;
+    left: 167px;
+  }
+
+  .companion__text {
+    margin-top: 53px;
   }
 }
