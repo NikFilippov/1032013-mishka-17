@@ -1,4 +1,4 @@
-.reviews-wrapper {
+.reviews__wrapper {
   margin-top: 55px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews-wrapper {
+  .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
     height: 560px;
@@ -63,7 +63,7 @@
     order: 1;
     font-size: 43px;
     line-height: 50px;
-    margin-left: -4px;
+    margin-left: 46px;
   }
 
   .reviews__button {
@@ -81,31 +81,48 @@
     width: 668px;
     height: 175px;
     font-size: 17px;
-    margin-top: 43px;
+    margin-top: 44px;
+    margin-left: 49px;
   }
 
   .reviews__signature {
     order: 4;
     width: 254px;
     font-size: 18px;
-    margin-top: -3px;
+    margin-top: 5px;
+    margin-left: 49px;
   }
 
   .reviews__background {
+    position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     margin-top: 82px;
+    margin-left: -50px;
+  }
+
+  .reviews__background::before {
+    content: "";
+    width: 768px;
+    height: 23px;
+    position: absolute;
+    background-image: url(../img/bg-zigzag-line.svg);
+    z-index: 1;
+    top: 520px;
+  }
+
+  .reviews___contact {
+    margin-top: 4px;
+    display: block;
   }
 }
 
 @media (min-width: @dextop-width) {
-  .reviews-wrapper {
+  .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 964px;
     height: 560px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
     position: relative;
     padding-left: 175px;
   }
@@ -115,6 +132,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-top: -7px;
+    margin-left: -5px;
   }
 
   .reviews__button {
@@ -128,12 +146,15 @@
     order: 3;
     width: 771px;
     height: 175px;
-    margin-top: 22px;
+    margin-top: 20px;
+    margin-left: -1px;
   }
 
   .reviews__signature {
     order: 4;
     margin-top: -76px;
+    font-size: 17px;
+    margin-left: 0;
   }
 
   .slider-controls {
@@ -146,5 +167,17 @@
   .reviews__background {
     background-image: none;
     margin-top: 88px;
+    margin-left: 0;
+  }
+
+  .reviews__background::before {
+    width: 1050px;
+    top: 520px;
+    left: 51px;
+  }
+
+  .reviews___contact {
+    line-height: 32px;
+    margin-top: 2px;
   }
 }

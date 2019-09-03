@@ -38,11 +38,7 @@
   margin-top: -6px;
 }
 
-// a .main-catalog__image {
-//   display: block;
-// }
-
-img .main-catalog__image {
+.main-catalog__image {
   vertical-align: bottom;
 }
 
@@ -153,8 +149,8 @@ img .main-catalog__image {
 
   .main-catalog__grid {
     position: relative;
-    margin-bottom: 22px;
-    margin-top: 188px;
+    // margin-bottom: 22px;
+    // margin-top: 188px;
     padding-left: 4px;
   }
 
@@ -270,5 +266,17 @@ img .main-catalog__image {
   .main-catalog__bascket {
     margin-left: 122px;
     margin-top: -13px;
+  }
+
+  .main-catalog__grid--bigbascket::after {
+    width: 260px;
+    top: -36px;
+    left: 20px;
+  }
+
+  .main-catalog__grid::after {
+    width: 260px;
+    top: -36px;
+    left: 24px;
   }
 }
