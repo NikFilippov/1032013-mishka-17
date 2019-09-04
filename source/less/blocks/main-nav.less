@@ -11,6 +11,12 @@
   background-color: #ffffff;
 }
 
+.main-button__wrapper {
+  padding-left: 269px;
+  margin-top: 26px;
+  position: relative;
+  width: 50px;
+}
 
 .page-header__logo:hover .main-nav__logo-svg {
   fill: #46c1ae;
@@ -24,11 +30,15 @@
 .main-nav__logo-svg {
   width: 86px;
   height: 35px;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-left: 115px;
 }
 
 .main-nav__logo-dextop {
+  display: none;
+}
+
+.main-nav__item--deliveryindex {
   display: none;
 }
 
@@ -43,14 +53,14 @@
 }
 
 .main-nav__toggel {
-  position: absolute;
+  // position: absolute;
   border: none;
   background-color: #ffffff;
   width: 22px;
   height: 22px;
   padding: 0;
-  left: 269px;
-  top: 27px;
+  // left: 269px;
+  // top: 27px;
 }
 
 .main-nav__toggel::after,
@@ -60,8 +70,10 @@
   width: 27px;
   height: 3px;
   background-color: #323232;
-  bottom: 10px;
-  right: -2px;
+  // bottom: 10px;
+  // right: -2px;
+  bottom: 16px;
+  right: -24px;
 }
 
 .main-nav__toggel::before {
@@ -113,7 +125,7 @@
     border-bottom: solid 1px #ececec;
     width: 100%;
     left: 1px;
-    top: 88px;
+    top: 64px;
   }
 
   .main-nav__logo-dextop {
@@ -373,5 +385,9 @@
 
   .main-nav__logo-svg {
     display: none;
+  }
+
+  .main-nav__line::after {
+    top: 62px;
   }
 }
