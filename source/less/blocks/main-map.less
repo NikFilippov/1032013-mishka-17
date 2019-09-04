@@ -11,19 +11,48 @@
   position: absolute;
   background-image: url("../img/icon-map-pin.svg");
   background-repeat: no-repeat;
-  top: 147px;
-  left: 140px;
+  top: 145px;
+  left: 138px;
 }
 
 @media (min-width: @tablet-width) {
   .main-map__wrapper {
-    width: 768px;
+    position: relative;
     margin: 0 auto;
+    background-image: url("../img/map-tablet@1x.jpg");
+    width: 768px;
+    height: 459px;
+  }
+
+  .main-map__wrapper::before {
+    content: "";
+    width: 66px;
+    height: 101px;
+    position: absolute;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    top: 140px;
+    left: 364px;
+  }
+
+  .main-map__img {
+    display: none;
+  }
+
+  .main-map__wrapper::after {
+    display: none;
   }
 }
 
 @media (min-width: @dextop-width) {
   .main-map__wrapper {
     width: 525px;
+    background-image: url("../img/map-desktop@1x.jpg");
+    margin-top: 59px;
+  }
+
+  .main-map__wrapper::before {
+    top: 145px;
+    left: 238px;
   }
 }

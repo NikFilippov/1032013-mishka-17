@@ -1,14 +1,22 @@
 .main-nav {
   position: relative;
+  z-index: 1;
 }
 
 .main-nav__item {
   display: block;
-  border-bottom: solid 1px #ececec;
+  // border-bottom: solid 1px #ececec;
   border-top: solid 1px #ececec;
-  line-height: 76px;
+  line-height: 77px;
+  background-color: #ffffff;
 }
 
+.main-button__wrapper {
+  padding-left: 269px;
+  margin-top: 26px;
+  position: relative;
+  width: 50px;
+}
 
 .page-header__logo:hover .main-nav__logo-svg {
   fill: #46c1ae;
@@ -26,6 +34,14 @@
   margin-left: 115px;
 }
 
+.main-nav__logo-dextop {
+  display: none;
+}
+
+.main-nav__item--deliveryindex {
+  display: none;
+}
+
 .main-nav__logo-tablet {
   width: 116px;
   height: 55px;
@@ -37,14 +53,14 @@
 }
 
 .main-nav__toggel {
-  position: absolute;
+  // position: absolute;
   border: none;
   background-color: #ffffff;
   width: 22px;
   height: 22px;
   padding: 0;
-  left: 269px;
-  top: 27px;
+  // left: 269px;
+  // top: 27px;
 }
 
 .main-nav__toggel::after,
@@ -54,8 +70,10 @@
   width: 27px;
   height: 3px;
   background-color: #323232;
-  bottom: 10px;
-  right: -2px;
+  // bottom: 10px;
+  // right: -2px;
+  bottom: 16px;
+  right: -24px;
 }
 
 .main-nav__toggel::before {
@@ -79,13 +97,38 @@
   display: none;
 }
 
+.main-nav__item--incomeindex {
+  display: none;
+}
+
 .main-nav__item--sell-out {
+  display: none;
+}
+
+.main-nav__item--sell-outindex {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__toggel::after,
   .main-nav__toggel::before {
+    display: none;
+  }
+
+  .main-nav__line {
+    position: relative;
+  }
+
+  .main-nav__line::after {
+    position: absolute;
+    content: "";
+    border-bottom: solid 1px #ececec;
+    width: 100%;
+    left: 1px;
+    top: 64px;
+  }
+
+  .main-nav__logo-dextop {
     display: none;
   }
 
@@ -108,26 +151,55 @@
   .main-nav__item {
     display: inline-block;
     vertical-align: top;
+    border: none;
+    line-height: 20px;
   }
 
   .main-nav__item--search {
     order: 1;
     width: 84px;
+    height: 88px;
+    border-right: solid 1px #ececec;
+    border-left: solid 1px #ececec;
+    background-color: white;
+    margin-top: -18px;
+    margin-left: 47px;
   }
 
   .main-nav__item--bascket {
     order: 2;
     width: 315px;
+    height: 0;
+  }
+
+  .main-nav__item--catalogindex {
+    order: 3;
+    width: 167px;
+    margin-top: 9px;
+    margin-left: 3px;
+    background-color: #f9f9f9;
   }
 
   .main-nav__item--catalog {
     order: 3;
     width: 167px;
+    margin-top: 9px;
+    margin-left: 3px;
+    background-color: #f1f1f1;
   }
 
   .main-nav__item--knitting {
     order: 3;
     width: 167px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+  }
+
+  .main-nav__item--knittingindex {
+    order: 3;
+    width: 167px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
   }
 
   .main-nav__logo {
@@ -141,13 +213,36 @@
     line-height: 24px;
     font-weight: normal;
     color: #444444;
+    margin-top: 10px;
+    margin-left: 104px;
+    background-color: #f1f1f1;
+  }
+
+  .main-nav__item--deliveryindex {
+    order: 4;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+    margin-top: 10px;
+    margin-left: 104px;
+    background-color: #f9f9f9;
   }
 
   .main-nav__item--income {
     display: none;
   }
 
+  .main-nav__item--incomeindex {
+    display: none;
+  }
+
   .main-nav__item--sell-out {
+    display: none;
+  }
+
+  .main-nav__item--sell-outindex {
     display: none;
   }
 
@@ -163,9 +258,13 @@
   }
 
   .main-nav__logo-tablet {
-    width: 116px;
-    height: 55px;
+    display: none;
+  }
+
+  .main-nav__logo-dextop {
     display: block;
+    margin-top: -13px;
+    margin-left: 75px;
   }
 
   .main-nav__wrapper {
@@ -186,37 +285,80 @@
 
   .main-nav__item--search {
     order: 4;
-    width: 84px;
+    margin-left: 50px;
+    margin-top: -22px;
   }
 
   .main-nav__item--bascket {
     order: 5;
-    width: 315px;
+    width: 266px;
+  }
+
+  .main-nav__item--catalogindex {
+    order: 1;
+    width: 186px;
+    margin-left: 0;
+    border-right: solid 1px #ececec;
+    margin-top: -22px;
+    height: 88px;
+    padding-top: 31px;
+    background-color: #ffffff;
   }
 
   .main-nav__item--catalog {
     order: 1;
-    width: 167px;
+    width: 186px;
+    margin-left: 0;
+    border-right: solid 1px #ececec;
+    margin-top: -22px;
+    height: 88px;
+    padding-top: 31px;
+    background-color: #ffffff;
   }
 
   .main-nav__item--knitting {
     order: 2;
-    width: 167px;
+    width: 189px;
+    padding-left: 33px;
+    height: 0;
+  }
+
+  .main-nav__item--knittingindex {
+    order: 2;
+    width: 189px;
+    padding-left: 33px;
+    height: 0;
+    background-color: #ffffff;
   }
 
   .main-nav__logo {
     order: 3;
-    width: 275px;
   }
 
   .main-nav__item--income {
     order: 6;
-    width: 275px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+  }
+
+  .main-nav__item--incomeindex {
+    order: 6;
+    margin-top: 5px;
+    background-color: #f9f9f9;
   }
 
   .main-nav__item--sell-out {
     order: 6;
-    width: 275px;
+    margin-left: 61px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+  }
+
+  .main-nav__item--sell-outindex {
+    order: 6;
+    margin-left: 61px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
   }
 
   .main-nav__item--delivery {
@@ -226,9 +368,26 @@
     line-height: 24px;
     font-weight: normal;
     color: #444444;
+    margin-left: 505px;
+    margin-top: 5px;
+  }
+
+  .main-nav__item--deliveryindex {
+    order: 7;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+    margin-left: 505px;
+    margin-top: 5px;
   }
 
   .main-nav__logo-svg {
     display: none;
+  }
+
+  .main-nav__line::after {
+    top: 62px;
   }
 }

@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: -54px;
 }
 
 .site-list__item {
@@ -19,20 +20,84 @@
 
 .site-list__svg {
   position: absolute;
-  top: 5px;
-  left: 32px;
+  top: 3px;
+  left: 30px;
+}
+
+.site-list__svg--bascket {
+  position: absolute;
+  top: 3px;
+  left: 30px;
 }
 
 @media (min-width: @tablet-width) {
-  .site-list__item {
-    padding-left: 0;
-    line-height: 0;
+  .site-list__text {
+    padding: 0;
+  }
+
+  .site-list__text--bascket {
+    margin-left: 83px;
+    line-height: 49px;
+  }
+
+  .site-list__text--zero {
+    font-size: 0;
+  }
+
+  .site-list {
+    position: relative;
+    padding-top: 18px;
+    padding-left: 45px;
+  }
+
+  .site-list__svg {
+    top: 37px;
+    left: 32px;
+  }
+
+  .site-list__svg--bascket {
+    position: absolute;
+    top: 3px;
+    left: 32px;
+  }
+
+  .site-list__text--tablet {
+    font-size: 15px;
+  }
+
+  .site-list__delivery {
+    color: #444444;
   }
 }
 
 @media (min-width: @dextop-width) {
+  .site-list {
+    padding-top: 22px;
+    padding-left: 0;
+  }
+
   .site-list__item {
     padding-left: 0;
     line-height: 0;
+  }
+
+  .site-list::after {
+    display: none;
+  }
+
+  .site-list__text--tablet {
+    font-size: 17px;
+  }
+
+  .site-list__svg--bascket {
+    top: 2px;
+  }
+
+  .site-list__text--bascket {
+    line-height: 43px;
+  }
+
+  .site-list__text--dextop {
+    font-size: 15px;
   }
 }
