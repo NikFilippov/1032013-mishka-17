@@ -4,7 +4,7 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
-var srver = require("browser-sync").create();
+var server = require("browser-sync").create();
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -109,5 +109,6 @@ gulp.task("refresh", function (done) {
   done();
 });
 
+gulp.task("start", gulp.series("build", "server"));
 gulp.task("build", gulp.series("css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
