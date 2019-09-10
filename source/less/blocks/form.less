@@ -13,6 +13,7 @@
 .form__name--type {
   margin-bottom: 28px;
   position: relative;
+  margin-top: 0;
 }
 
 .form__name--type::after {
@@ -152,10 +153,37 @@
   display: block;
   margin-top: 29px;
   margin-bottom: 24px;
+}
+
+.form__fio--surnam {
   position: relative;
 }
 
-.form__fio::before {
+.form__fio--patronymic {
+  position: relative;
+}
+
+.form__fio--line {
+  position: relative;
+}
+
+.form__fio--surname::before {
+  content: "";
+  position: absolute;
+  border-bottom: solid 2px #000000;
+  width: 260px;
+  top: 206px;
+}
+
+.form__fio--patronymic::before {
+  content: "";
+  position: absolute;
+  border-bottom: solid 2px #000000;
+  width: 260px;
+  top: 65px;
+}
+
+.form__fio--line::before {
   content: "";
   position: absolute;
   border-bottom: solid 2px #000000;
@@ -220,6 +248,13 @@
   opacity: 0.3;
 }
 
+.form__mail-svg {
+  position: absolute;
+  top: 34px;
+  left: 254px;
+  opacity: 0.3;
+}
+
 .form__mail {
   font-size: 17px;
   line-height: 18px;
@@ -254,7 +289,7 @@
   width: 260px;
   height: 142px;
   border: solid 2px #444444;
-  margin-top: 23px;
+  margin-top: 6px;
   padding-top: 13px;
   padding-left: 15px;
 }
@@ -507,7 +542,19 @@
     margin-top: 33px;
   }
 
-  .form__fio::before {
+  .form__fio--surname::before {
+    width: 375px;
+    top: 172px;
+    left: 342px;
+  }
+
+  .form__fio--patronymic::before {
+    width: 375px;
+    top: 32px;
+    left: 126px;
+  }
+
+  .form__fio--line::before {
     width: 428px;
     top: 33px;
     left: 73px;
@@ -524,7 +571,7 @@
     background-color: #f1f1f1;
     font-size: 19px;
     margin: 0;
-    margin-top: 59px;
+    margin-top: 47px;
     margin-left: 149px;
   }
 
@@ -532,7 +579,7 @@
     background-color: #f1f1f1;
     font-size: 19px;
     margin: 0;
-    margin-top: 49px;
+    margin-top: 22px;
     margin-left: 123px;
   }
 
@@ -541,7 +588,7 @@
   }
 
   .form__name--mail {
-    margin-top: 57px;
+    margin-top: 44px;
   }
 
   .form__name--tel::before {
@@ -599,6 +646,11 @@
     top: 61px;
     left: 665px;
   }
+
+  .form__mail-svg {
+    top: 37px;
+    left: 662px;
+  }
 }
 
 @media (min-width: @dextop-width) {
@@ -609,6 +661,11 @@
   .form__phone-svg {
     top: 61px;
     left: 892px;
+  }
+
+  .form__mail-svg {
+    top: 36px;
+    left: 890px;
   }
 
   .page-mainform__headline--wrapper::before {
@@ -666,11 +723,24 @@
     margin-top: 32px;
   }
 
-  .form__fio::before {
+  .form__fio--surname::before {
+    width: 572px;
+    top: 174px;
+    left: 353px;
+  }
+
+  .form__fio--patronymic::before {
+    width: 572px;
+    top: 35px;
+    left: 128px;
+  }
+
+  .form__fio--line::before {
     width: 627px;
     top: 35px;
     left: 71px;
   }
+
 
   .form__name--tel {
     margin-top: 69px;
